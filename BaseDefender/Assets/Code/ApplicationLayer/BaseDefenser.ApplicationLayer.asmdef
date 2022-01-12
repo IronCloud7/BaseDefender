@@ -1,0 +1,17 @@
+{
+    "name": "BaseDefenser.ApplicationLayer",
+    "rootNamespace": "",
+    "references": [
+        "GUID:4b485aa76e4e97a46bd0e4a3f280b95d",
+        "GUID:0da6d172d18a54e4389d0dce1e1ffdf2"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
