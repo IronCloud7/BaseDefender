@@ -31,7 +31,7 @@ public class PlayModeTest
         var result = a + b;
 
         //Assert
-        Assert.AreEqual(32, result);
+        Assert.AreEqual(30, result);
     }
 
 
