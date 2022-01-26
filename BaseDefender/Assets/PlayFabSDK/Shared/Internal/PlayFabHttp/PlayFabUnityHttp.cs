@@ -3,6 +3,7 @@
 using PlayFab.SharedModels;
 using System;
 using System.Collections;
+using System.IO;
 using UnityEngine;
 using UnityEngine.Networking;
 
@@ -83,11 +84,7 @@ namespace PlayFab.Internal
 #if Unity_2021_1_OR_NEWER
                 if (request.result == UnityWebRequest.Result.ConnectionError || request.result == UnityWebRequest.Result.ProtocolError)
 #else
-#pragma warning disable CS0618 // 'UnityWebRequest.isNetworkError' está obsoleto: 'UnityWebRequest.isNetworkError is deprecated. Use (UnityWebRequest.result == UnityWebRequest.Result.ConnectionError) instead.'
-#pragma warning disable CS0618 // 'UnityWebRequest.isHttpError' está obsoleto: 'UnityWebRequest.isHttpError is deprecated. Use (UnityWebRequest.result == UnityWebRequest.Result.ProtocolError) instead.'
                 if (request.isNetworkError || request.isHttpError)
-#pragma warning restore CS0618 // 'UnityWebRequest.isHttpError' está obsoleto: 'UnityWebRequest.isHttpError is deprecated. Use (UnityWebRequest.result == UnityWebRequest.Result.ProtocolError) instead.'
-#pragma warning restore CS0618 // 'UnityWebRequest.isNetworkError' está obsoleto: 'UnityWebRequest.isNetworkError is deprecated. Use (UnityWebRequest.result == UnityWebRequest.Result.ConnectionError) instead.'
 #endif
                 {
                     errorCallback(request.error);

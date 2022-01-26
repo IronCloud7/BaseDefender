@@ -1,10 +1,10 @@
-using PlayFab.PfEditor.EditorModels;
-using PlayFab.PfEditor.Json;
+using UnityEngine;
 using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
-using UnityEngine;
+using PlayFab.PfEditor.Json;
+using PlayFab.PfEditor.EditorModels;
 using UnityEngine.Networking;
 
 namespace PlayFab.PfEditor
@@ -191,9 +191,7 @@ namespace PlayFab.PfEditor
             {
                 yield return www.SendWebRequest();
 
-#pragma warning disable CS0618 // 'UnityWebRequest.isHttpError' está obsoleto: 'UnityWebRequest.isHttpError is deprecated. Use (UnityWebRequest.result == UnityWebRequest.Result.ProtocolError) instead.'
                 if (!string.IsNullOrEmpty(www.error) || www.isHttpError)
-#pragma warning restore CS0618 // 'UnityWebRequest.isHttpError' está obsoleto: 'UnityWebRequest.isHttpError is deprecated. Use (UnityWebRequest.result == UnityWebRequest.Result.ProtocolError) instead.'
                     errorCallback(www.error);
                 else
                     callBack(www.downloadHandler.data);

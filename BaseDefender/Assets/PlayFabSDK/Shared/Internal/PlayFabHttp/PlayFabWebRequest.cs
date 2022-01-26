@@ -1,13 +1,14 @@
 #if !UNITY_WSA && !UNITY_WP8
 
-using PlayFab.SharedModels;
 using System;
+using UnityEngine;
 using System.Collections.Generic;
 using System.IO;
 using System.Net;
 using System.Threading;
-using UnityEngine;
+using PlayFab.SharedModels;
 #if !DISABLE_PLAYFABCLIENT_API
+using PlayFab.ClientModels;
 #endif
 
 namespace PlayFab.Internal
@@ -419,7 +420,7 @@ namespace PlayFab.Internal
                 reqContainer.ApiResult.Request = reqContainer.ApiRequest;
                 reqContainer.ApiResult.CustomData = reqContainer.CustomData;
 
-                if (_isApplicationPlaying)
+                if(_isApplicationPlaying)
                 {
                     PlayFabHttp.instance.OnPlayFabApiResult(reqContainer);
                 }

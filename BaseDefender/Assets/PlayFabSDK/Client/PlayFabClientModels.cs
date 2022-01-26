@@ -1,7 +1,7 @@
 #if !DISABLE_PLAYFABCLIENT_API
-using PlayFab.SharedModels;
 using System;
 using System.Collections.Generic;
+using PlayFab.SharedModels;
 
 namespace PlayFab.ClientModels
 {
@@ -111,7 +111,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// The new contact email to associate with the player.
         /// </summary>
@@ -147,7 +147,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// User email address attached to their account
         /// </summary>
@@ -190,7 +190,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Name of the virtual currency which is to be incremented.
         /// </summary>
@@ -274,11 +274,11 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// Dictionary of virtual currencies that were granted to the player
         /// </summary>
-        public Dictionary<string, int> GrantedVirtualCurrencies;
+        public Dictionary<string,int> GrantedVirtualCurrencies;
         /// <summary>
         /// Dictionary of statistics that were modified for the player
         /// </summary>
-        public Dictionary<string, int> IncrementedStatistics;
+        public Dictionary<string,int> IncrementedStatistics;
     }
 
     /// <summary>
@@ -376,15 +376,15 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// Cost of the catalog item for each applicable real world currency.
         /// </summary>
-        public Dictionary<string, uint> RealCurrencyPrices;
+        public Dictionary<string,uint> RealCurrencyPrices;
         /// <summary>
         /// Amount of each applicable virtual currency which will be received as a result of purchasing this catalog item.
         /// </summary>
-        public Dictionary<string, uint> VCAmount;
+        public Dictionary<string,uint> VCAmount;
         /// <summary>
         /// Cost of the catalog item for each applicable virtual currency.
         /// </summary>
-        public Dictionary<string, uint> VirtualCurrencyPrices;
+        public Dictionary<string,uint> VirtualCurrencyPrices;
     }
 
     /// <summary>
@@ -464,7 +464,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// override prices for this item for specific currencies
         /// </summary>
-        public Dictionary<string, uint> RealCurrencyPrices;
+        public Dictionary<string,uint> RealCurrencyPrices;
         /// <summary>
         /// list of item tags
         /// </summary>
@@ -472,7 +472,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// price of this item in virtual currencies and "RM" (the base Real Money purchase price, in USD pennies)
         /// </summary>
-        public Dictionary<string, uint> VirtualCurrencyPrices;
+        public Dictionary<string,uint> VirtualCurrencyPrices;
     }
 
     [Serializable]
@@ -490,7 +490,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// virtual currency types and balances which will be added to the player inventory when the bundle is added
         /// </summary>
-        public Dictionary<string, uint> BundledVirtualCurrencies;
+        public Dictionary<string,uint> BundledVirtualCurrencies;
     }
 
     [Serializable]
@@ -540,7 +540,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// virtual currency types and balances which will be added to the player inventory when the container is unlocked
         /// </summary>
-        public Dictionary<string, uint> VirtualCurrencyContents;
+        public Dictionary<string,uint> VirtualCurrencyContents;
     }
 
     [Serializable]
@@ -646,7 +646,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Purchase order identifier returned from StartPurchase.
         /// </summary>
@@ -689,7 +689,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Unique instance identifier of the item to be consumed.
         /// </summary>
@@ -719,7 +719,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Marketplace specific payload containing details to fetch in app purchase transactions
         /// </summary>
@@ -745,7 +745,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Marketplace specific payload containing details to fetch in app purchase transactions
         /// </summary>
@@ -771,7 +771,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Id of the PSN service label to consume entitlements from
         /// </summary>
@@ -797,7 +797,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Token provided by the Xbox Live SDK/XDK method GetTokenAndSignatureAsync("POST", "https://playfabapi.com/", "").
         /// </summary>
@@ -839,7 +839,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// Content of data
         /// </summary>
-        public Dictionary<string, string> Data;
+        public Dictionary<string,string> Data;
     }
 
     public enum ContinentCode
@@ -1345,7 +1345,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// Information posted to the PlayStream Event. Currently arbitrary, and specific to the environment sending it.
         /// </summary>
-        public Dictionary<string, object> Info;
+        public Dictionary<string,object> Info;
     }
 
     public enum EmailVerificationStatus
@@ -1404,7 +1404,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// The name of the CloudScript function to execute
         /// </summary>
@@ -1631,7 +1631,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// game session tags
         /// </summary>
-        public Dictionary<string, string> Tags;
+        public Dictionary<string,string> Tags;
     }
 
     public enum GameInstanceState
@@ -1814,7 +1814,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// User specific data for this title.
         /// </summary>
-        public Dictionary<string, UserDataRecord> Data;
+        public Dictionary<string,UserDataRecord> Data;
         /// <summary>
         /// Indicates the current version of the data that has been set. This is incremented with every set call for that type of
         /// data (read-only, internal, etc). This version can be provided in Get calls to find updated data.
@@ -1841,7 +1841,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
     }
 
     [Serializable]
@@ -1858,11 +1858,11 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// Array of virtual currency balance(s) belonging to the character.
         /// </summary>
-        public Dictionary<string, int> VirtualCurrency;
+        public Dictionary<string,int> VirtualCurrency;
         /// <summary>
         /// Array of remaining times and timestamps for virtual currencies.
         /// </summary>
-        public Dictionary<string, VirtualCurrencyRechargeTime> VirtualCurrencyRechargeTimes;
+        public Dictionary<string,VirtualCurrencyRechargeTime> VirtualCurrencyRechargeTimes;
     }
 
     [Serializable]
@@ -1916,7 +1916,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The requested character statistics.
         /// </summary>
-        public Dictionary<string, int> CharacterStatistics;
+        public Dictionary<string,int> CharacterStatistics;
     }
 
     [Serializable]
@@ -1952,7 +1952,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Indicates whether Facebook friends should be included in the response. Default is true.
         /// </summary>
@@ -2018,7 +2018,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Indicates whether Facebook friends should be included in the response. Default is true.
         /// </summary>
@@ -2061,7 +2061,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Indicates whether Facebook friends should be included in the response. Default is true.
         /// </summary>
@@ -2137,7 +2137,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Maximum number of entries to retrieve. Default 10, maximum 100.
         /// </summary>
@@ -2212,7 +2212,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Maximum number of entries to retrieve. Default 10, maximum 100.
         /// </summary>
@@ -2305,7 +2305,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Flags for which pieces of info to return for the user.
         /// </summary>
@@ -2427,11 +2427,11 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// Title data for this title.
         /// </summary>
-        public Dictionary<string, string> TitleData;
+        public Dictionary<string,string> TitleData;
         /// <summary>
         /// User specific custom data.
         /// </summary>
-        public Dictionary<string, UserDataRecord> UserData;
+        public Dictionary<string,UserDataRecord> UserData;
         /// <summary>
         /// The version of the UserData that was returned.
         /// </summary>
@@ -2443,7 +2443,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// User specific read-only data.
         /// </summary>
-        public Dictionary<string, UserDataRecord> UserReadOnlyData;
+        public Dictionary<string,UserDataRecord> UserReadOnlyData;
         /// <summary>
         /// The version of the Read-Only UserData that was returned.
         /// </summary>
@@ -2451,11 +2451,11 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// Dictionary of virtual currency balance(s) belonging to the user.
         /// </summary>
-        public Dictionary<string, int> UserVirtualCurrency;
+        public Dictionary<string,int> UserVirtualCurrency;
         /// <summary>
         /// Dictionary of remaining times and timestamps for virtual currencies.
         /// </summary>
-        public Dictionary<string, VirtualCurrencyRechargeTime> UserVirtualCurrencyRechargeTimes;
+        public Dictionary<string,VirtualCurrencyRechargeTime> UserVirtualCurrencyRechargeTimes;
     }
 
     /// <summary>
@@ -2470,7 +2470,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Unique PlayFab assigned ID of the user on whom the operation will be performed.
         /// </summary>
@@ -2513,7 +2513,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// statistics to return (current version will be returned for each)
         /// </summary>
@@ -2543,7 +2543,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// unique name of the statistic
         /// </summary>
@@ -2570,7 +2570,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Optional namespace to filter results by
         /// </summary>
@@ -2877,7 +2877,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// a dictionary object of key / value pairs
         /// </summary>
-        public Dictionary<string, string> Data;
+        public Dictionary<string,string> Data;
     }
 
     [Serializable]
@@ -2955,7 +2955,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// Data for the requested keys.
         /// </summary>
-        public Dictionary<string, SharedGroupDataRecord> Data;
+        public Dictionary<string,SharedGroupDataRecord> Data;
         /// <summary>
         /// List of PlayFabId identifiers for the members of this group, if requested.
         /// </summary>
@@ -3060,7 +3060,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// a dictionary object of key / value pairs
         /// </summary>
-        public Dictionary<string, string> Data;
+        public Dictionary<string,string> Data;
     }
 
     [Serializable]
@@ -3166,7 +3166,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// User specific data for this title.
         /// </summary>
-        public Dictionary<string, UserDataRecord> Data;
+        public Dictionary<string,UserDataRecord> Data;
         /// <summary>
         /// Indicates the current version of the data that has been set. This is incremented with every set call for that type of
         /// data (read-only, internal, etc). This version can be provided in Get calls to find updated data.
@@ -3180,7 +3180,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
     }
 
     /// <summary>
@@ -3198,11 +3198,11 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// Array of virtual currency balance(s) belonging to the user.
         /// </summary>
-        public Dictionary<string, int> VirtualCurrency;
+        public Dictionary<string,int> VirtualCurrency;
         /// <summary>
         /// Array of remaining times and timestamps for virtual currencies.
         /// </summary>
-        public Dictionary<string, VirtualCurrencyRechargeTime> VirtualCurrencyRechargeTimes;
+        public Dictionary<string,VirtualCurrencyRechargeTime> VirtualCurrencyRechargeTimes;
     }
 
     [Serializable]
@@ -3237,7 +3237,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Catalog item identifier of the item in the user's inventory that corresponds to the character in the catalog to be
         /// created.
@@ -3293,7 +3293,7 @@ namespace PlayFab.ClientModels
         /// A set of custom key-value pairs on the instance of the inventory item, which is not to be confused with the catalog
         /// item's custom data.
         /// </summary>
-        public Dictionary<string, string> CustomData;
+        public Dictionary<string,string> CustomData;
         /// <summary>
         /// CatalogItem.DisplayName at the time this item was purchased.
         /// </summary>
@@ -3384,7 +3384,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// If another user is already linked to the device, unlink the other user and re-link.
         /// </summary>
@@ -3406,7 +3406,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// If another user is already linked to a specific Apple account, unlink the other user and re-link.
         /// </summary>
@@ -3428,7 +3428,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// If another user is already linked to the custom ID, unlink the other user and re-link.
         /// </summary>
@@ -3480,7 +3480,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// If another user is already linked to the account, unlink the other user and re-link.
         /// </summary>
@@ -3498,7 +3498,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Facebook Instant Games signature for the user.
         /// </summary>
@@ -3520,7 +3520,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// If another user is already linked to the account, unlink the other user and re-link.
         /// </summary>
@@ -3563,7 +3563,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// If another user is already linked to the account, unlink the other user and re-link.
         /// </summary>
@@ -3586,7 +3586,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Vendor-specific iOS identifier for the user's device.
         /// </summary>
@@ -3620,7 +3620,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// If another user is already linked to the account, unlink the other user and re-link.
         /// </summary>
@@ -3642,7 +3642,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// If another user is already linked to a specific Nintendo Switch account, unlink the other user and re-link.
         /// </summary>
@@ -3660,7 +3660,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// If another user is already linked to the Nintendo Switch Device ID, unlink the other user and re-link.
         /// </summary>
@@ -3686,7 +3686,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// If another user is already linked to a specific OpenId Connect user, unlink the other user and re-link.
         /// </summary>
@@ -3708,7 +3708,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// If another user is already linked to the account, unlink the other user and re-link.
         /// </summary>
@@ -3741,7 +3741,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// If another user is already linked to the account, unlink the other user and re-link.
         /// </summary>
@@ -3768,7 +3768,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// If another user is already linked to the account, unlink the other user and re-link.
         /// </summary>
@@ -3786,7 +3786,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// If another user is already linked to the account, unlink the other user and re-link.
         /// </summary>
@@ -3941,7 +3941,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).
         /// </summary>
@@ -3975,7 +3975,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).
         /// </summary>
@@ -4021,7 +4021,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).
         /// </summary>
@@ -4052,7 +4052,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Email address for the account.
         /// </summary>
@@ -4082,7 +4082,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).
         /// </summary>
@@ -4133,7 +4133,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).
         /// </summary>
@@ -4173,7 +4173,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).
         /// </summary>
@@ -4240,7 +4240,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).
         /// </summary>
@@ -4287,7 +4287,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Vendor-specific iOS identifier for the user's device.
         /// </summary>
@@ -4342,7 +4342,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).
         /// </summary>
@@ -4376,7 +4376,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).
         /// </summary>
@@ -4410,7 +4410,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).
         /// </summary>
@@ -4448,7 +4448,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).
         /// </summary>
@@ -4484,7 +4484,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Flags for which pieces of info to return for the user.
         /// </summary>
@@ -4524,7 +4524,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).
         /// </summary>
@@ -4573,7 +4573,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).
         /// </summary>
@@ -4621,7 +4621,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).
         /// </summary>
@@ -4657,7 +4657,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Base64 encoded body that is encrypted with the Title's public RSA key (Enterprise Only).
         /// </summary>
@@ -4709,7 +4709,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Game mode to match make against. [Note: Required if LobbyId is not specified]
         /// </summary>
@@ -4925,7 +4925,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Purchase order identifier returned from StartPurchase.
         /// </summary>
@@ -4982,11 +4982,11 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// Virtual currencies granted by the transaction, if any.
         /// </summary>
-        public Dictionary<string, int> VCAmount;
+        public Dictionary<string,int> VCAmount;
         /// <summary>
         /// Current virtual currency balances for the user.
         /// </summary>
-        public Dictionary<string, int> VirtualCurrency;
+        public Dictionary<string,int> VirtualCurrency;
     }
 
     [Serializable]
@@ -5269,7 +5269,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Unique identifier of the item to purchase.
         /// </summary>
@@ -5363,7 +5363,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
     }
 
     [Serializable]
@@ -5456,7 +5456,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// An optional parameter for setting the display name for this title (3-25 characters).
         /// </summary>
@@ -5538,7 +5538,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
     }
 
     [Serializable]
@@ -5605,7 +5605,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Unique ID of the placement to report for
         /// </summary>
@@ -5634,7 +5634,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Unique PlayFab identifier of the reported player.
         /// </summary>
@@ -5670,7 +5670,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Base64 encoded receipt data, passed back by the App Store as a result of a successful purchase.
         /// </summary>
@@ -5698,7 +5698,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Placement unique ID
         /// </summary>
@@ -5774,7 +5774,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// User email address attached to their account
         /// </summary>
@@ -5897,7 +5897,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// the title-defined game mode this server is to be running (defaults to 0 if there is only one mode)
         /// </summary>
@@ -5964,7 +5964,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Array of items to purchase.
         /// </summary>
@@ -5993,7 +5993,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// Current virtual currency totals for the user.
         /// </summary>
-        public Dictionary<string, int> VirtualCurrencyBalances;
+        public Dictionary<string,int> VirtualCurrencyBalances;
     }
 
     [Serializable]
@@ -6096,11 +6096,11 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// Override prices for this item for specific currencies
         /// </summary>
-        public Dictionary<string, uint> RealCurrencyPrices;
+        public Dictionary<string,uint> RealCurrencyPrices;
         /// <summary>
         /// Override prices for this item in virtual currencies and "RM" (the base Real Money purchase price, in USD pennies)
         /// </summary>
-        public Dictionary<string, uint> VirtualCurrencyPrices;
+        public Dictionary<string,uint> VirtualCurrencyPrices;
     }
 
     /// <summary>
@@ -6181,7 +6181,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Name of the virtual currency which is to be decremented.
         /// </summary>
@@ -6356,7 +6356,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
     }
 
     [Serializable]
@@ -6370,7 +6370,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
     }
 
     [Serializable]
@@ -6384,7 +6384,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
     }
 
     [Serializable]
@@ -6398,7 +6398,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
     }
 
     [Serializable]
@@ -6412,7 +6412,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Facebook Instant Games identifier for the user. If not specified, the most recently signed in ID will be used.
         /// </summary>
@@ -6430,7 +6430,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
     }
 
     [Serializable]
@@ -6444,7 +6444,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
     }
 
     [Serializable]
@@ -6458,7 +6458,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Vendor-specific iOS identifier for the user's device. If not specified, the most recently signed in iOS Device ID will
         /// be used.
@@ -6477,7 +6477,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
     }
 
     [Serializable]
@@ -6491,7 +6491,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
     }
 
     [Serializable]
@@ -6500,7 +6500,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Nintendo Switch Device identifier for the user. If not specified, the most recently signed in device ID will be used.
         /// </summary>
@@ -6522,7 +6522,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
     }
 
     [Serializable]
@@ -6531,7 +6531,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
     }
 
     [Serializable]
@@ -6545,7 +6545,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
     }
 
     [Serializable]
@@ -6564,7 +6564,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
     }
 
     [Serializable]
@@ -6578,7 +6578,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
     }
 
     [Serializable]
@@ -6608,7 +6608,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// ItemInstanceId of the key that will be consumed by unlocking this container. If the container requires a key, this
         /// parameter is required.
@@ -6638,7 +6638,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
     }
 
     /// <summary>
@@ -6662,7 +6662,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// Virtual currency granted to the player as a result of unlocking the container.
         /// </summary>
-        public Dictionary<string, uint> VirtualCurrency;
+        public Dictionary<string,uint> VirtualCurrency;
     }
 
     [Serializable]
@@ -6690,12 +6690,12 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Key-value pairs to be written to the custom data. Note that keys are trimmed of whitespace, are limited in size, and may
         /// not begin with a '!' character or be null.
         /// </summary>
-        public Dictionary<string, string> Data;
+        public Dictionary<string,string> Data;
         /// <summary>
         /// Optional list of Data-keys to remove from UserData. Some SDKs cannot insert null-values into Data due to language
         /// constraints. Use this to delete the keys directly.
@@ -6734,11 +6734,11 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// Statistics to be updated with the provided values, in the Key(string), Value(int) pattern.
         /// </summary>
-        public Dictionary<string, int> CharacterStatistics;
+        public Dictionary<string,int> CharacterStatistics;
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
     }
 
     [Serializable]
@@ -6761,7 +6761,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Statistics to be updated with the provided values
         /// </summary>
@@ -6785,12 +6785,12 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Key-value pairs to be written to the custom data. Note that keys are trimmed of whitespace, are limited in size, and may
         /// not begin with a '!' character or be null.
         /// </summary>
-        public Dictionary<string, string> Data;
+        public Dictionary<string,string> Data;
         /// <summary>
         /// Optional list of Data-keys to remove from UserData. Some SDKs cannot insert null-values into Data due to language
         /// constraints. Use this to delete the keys directly.
@@ -6823,12 +6823,12 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Key-value pairs to be written to the custom data. Note that keys are trimmed of whitespace, are limited in size, and may
         /// not begin with a '!' character or be null.
         /// </summary>
-        public Dictionary<string, string> Data;
+        public Dictionary<string,string> Data;
         /// <summary>
         /// Optional list of Data-keys to remove from UserData. Some SDKs cannot insert null-values into Data due to language
         /// constraints. Use this to delete the keys directly.
@@ -6861,7 +6861,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// New title display name for the user - must be between 3 and 25 characters.
         /// </summary>
@@ -7300,7 +7300,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Amount of the stated currency paid, in centesimal units.
         /// </summary>
@@ -7348,7 +7348,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Amount of the stated currency paid, in centesimal units.
         /// </summary>
@@ -7397,7 +7397,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Amount of the stated currency paid, in centesimal units.
         /// </summary>
@@ -7434,7 +7434,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// Amount of the stated currency paid, in centesimal units.
         /// </summary>
@@ -7519,7 +7519,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// Custom event properties. Each property consists of a name (string) and a value (JSON object).
         /// </summary>
-        public Dictionary<string, object> Body;
+        public Dictionary<string,object> Body;
         /// <summary>
         /// Unique PlayFab assigned ID for a specific character owned by a user
         /// </summary>
@@ -7527,7 +7527,7 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// The name of the event, within the namespace scoped to the title. The naming convention is up to the caller, but it
         /// commonly follows the subject_verb_object pattern (e.g. player_logged_in).
@@ -7550,11 +7550,11 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// Custom data properties associated with the event. Each property consists of a name (string) and a value (JSON object).
         /// </summary>
-        public Dictionary<string, object> Body;
+        public Dictionary<string,object> Body;
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// The name of the event, within the namespace scoped to the title. The naming convention is up to the caller, but it
         /// commonly follows the subject_verb_object pattern (e.g. player_logged_in).
@@ -7587,11 +7587,11 @@ namespace PlayFab.ClientModels
         /// <summary>
         /// Custom event properties. Each property consists of a name (string) and a value (JSON object).
         /// </summary>
-        public Dictionary<string, object> Body;
+        public Dictionary<string,object> Body;
         /// <summary>
         /// The optional custom tags associated with the request (e.g. build number, external trace identifiers, etc.).
         /// </summary>
-        public Dictionary<string, string> CustomTags;
+        public Dictionary<string,string> CustomTags;
         /// <summary>
         /// The name of the event, within the namespace scoped to the title. The naming convention is up to the caller, but it
         /// commonly follows the subject_verb_object pattern (e.g. player_logged_in).
