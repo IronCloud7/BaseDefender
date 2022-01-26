@@ -1,5 +1,5 @@
-using PlayFab.Internal;
 using PlayFab.SharedModels;
+using PlayFab.Internal;
 
 namespace PlayFab.Events
 {

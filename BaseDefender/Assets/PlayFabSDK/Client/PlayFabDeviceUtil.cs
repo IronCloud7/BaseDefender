@@ -1,6 +1,6 @@
 #if !DISABLE_PLAYFABCLIENT_API
-using PlayFab.SharedModels;
 using System.Collections.Generic;
+using PlayFab.SharedModels;
 using UnityEngine;
 
 namespace PlayFab.Internal

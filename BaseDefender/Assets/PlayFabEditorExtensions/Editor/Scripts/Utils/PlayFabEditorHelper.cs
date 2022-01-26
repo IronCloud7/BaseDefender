@@ -1,9 +1,9 @@
-using PlayFab.PfEditor.Json;
+using UnityEditor;
+using UnityEngine;
 using System;
 using System.Collections.Generic;
 using System.IO;
-using UnityEditor;
-using UnityEngine;
+using PlayFab.PfEditor.Json;
 
 namespace PlayFab.PfEditor
 {
